@@ -57,7 +57,7 @@ def make_dataset_from_rlds(
     action_normalization_mask: Optional[List[bool]] = None,
     num_parallel_reads: int = tf.data.AUTOTUNE,
     num_parallel_calls: int = tf.data.AUTOTUNE,
-    reasoning_dataset_path: str = "~/.cache/reasonings_dataset.json",
+    reasoning_dataset_path: str = "data/embodied_features_bridge.json",
 ) -> Tuple[dl.DLataset, dict]:
     """
     This function is responsible for loading a specific RLDS dataset from storage and getting it into a standardized
